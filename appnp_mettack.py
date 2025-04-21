@@ -14,7 +14,7 @@ pos = [0.00, 0.02, 0.04, 0.05, 0.06, 0.08, 0.10]
 dataset = 'cora' #cora, citeseer, pubmed, amazon-photo
 attack = 'meta' #meta, nettack, RandomAttack
 
-for i in range(1,7):
+for i in range(0,7):
     with open('{}--{}--appnp.txt'.format(dataset, attack), 'a') as f:
         f.write('{}\n'.format(pos[i]))
     if dataset == 'amazon-photo':
